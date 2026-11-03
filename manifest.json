@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "vinicgobbi.workspaces",
+  "name": "Workspaces",
+  "version": "0.1.0",
+  "author": "vinicgobbi",
+  "license": "MIT",
+  "homepage": "https://github.com/vinicgobbi/omarchy-plugin-workspaces",
+  "description": "Workspace number indicators (cloned from omarchy.workspaces)",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "omarchy": {
+    "clonedFrom": "omarchy.workspaces"
+  },
+  "barWidget": {
+    "displayName": "Workspaces",
+    "description": "Workspace number indicators",
+    "category": "Compositor",
+    "defaultSection": "left",
+    "allowMultiple": false
+  }
+}
