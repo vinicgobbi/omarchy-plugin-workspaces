@@ -27,8 +27,13 @@ This plugin's bar widget is a clone of the built-in `omarchy.workspaces`
 declares `omarchy.clonedFrom`, enabling it replaces the built-in in the
 same bar position, and disabling it restores the built-in.
 
-`BarWidget.qml` (the plugin's entry point) hot-reloads on its own once
-the installed copy is updated.
+The shell logs a reload once the installed copy of `BarWidget.qml` is
+updated, but that isn't always enough for the bar to show the new
+version. If it still looks the same, restart the shell:
+
+```bash
+omarchy restart shell
+```
 
 Validate the manifest before publishing:
 
