@@ -10,6 +10,10 @@ cloned from the built-in `omarchy.workspaces`.
   a badge in the theme's accent color.
 - Click a workspace to focus it.
 
+## Preview
+
+![Workspaces widget on the bars of two monitors](preview.png)
+
 ## Install
 
 ```bash
