@@ -52,6 +52,8 @@ BarWidget {
       model: root.workspaceIds()
 
       WidgetButton {
+        id: button
+
         required property int modelData
 
         readonly property var workspace: root.workspaceById(modelData)
@@ -61,13 +63,27 @@ BarWidget {
         bar: root.bar
         text: modelData === 10 ? "0" : String(modelData)
         active: focused
-        activeColor: Color.accent
+        activeColor: Color.background
         opacity: occupied || focused ? 1 : 0.5
         horizontalMargin: 6
         verticalPadding: 6
         fixedWidth: root.vertical ? root.barSize : Style.space(20)
         fixedHeight: root.barSize
         onPressed: function() { root.focusWorkspace(modelData) }
+
+        Rectangle {
+          z: -1
+          anchors.centerIn: parent
+          width: Style.space(18)
+          height: Style.space(18)
+          radius: Math.max(2, Style.cornerRadius)
+          color: Color.accent
+          opacity: button.focused ? 1 : 0
+
+          Behavior on opacity {
+            NumberAnimation { duration: 140; easing.type: Easing.OutCubic }
+          }
+        }
       }
     }
   }
