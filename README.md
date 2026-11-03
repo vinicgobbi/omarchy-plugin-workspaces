@@ -6,7 +6,8 @@ cloned from the built-in `omarchy.workspaces`.
 ## What it does
 
 - Shows workspaces 1 to 5 at all times, plus any of 6 to 10 that exist.
-- Marks the focused workspace with an icon and dims the empty ones.
+- Keeps the number visible on the focused workspace, highlighting it
+  with the theme's active color, and dims the empty ones.
 - Click a workspace to focus it.
 
 ## Install
