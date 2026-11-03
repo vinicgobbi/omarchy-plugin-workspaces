@@ -5,9 +5,9 @@ cloned from the built-in `omarchy.workspaces`.
 
 ## What it does
 
-- Shows workspaces 1 to 5 at all times, plus any of 6 to 10 that exist.
-- Keeps the number visible on the focused workspace, over a badge in
-  the theme's accent color, and dims the empty ones.
+- Each monitor's bar only lists the workspaces in use on that monitor.
+- Keeps the number visible on the workspace open on that monitor, over
+  a badge in the theme's accent color.
 - Click a workspace to focus it.
 
 ## Install
