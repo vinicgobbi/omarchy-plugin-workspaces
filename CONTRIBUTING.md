@@ -10,6 +10,7 @@ leave):
 
 ```bash
 git clone "$(pwd)" ~/.config/omarchy/plugins/vinicgobbi.workspaces
+omarchy-shell shell rescanPlugins
 omarchy plugin enable vinicgobbi.workspaces
 ```
 
